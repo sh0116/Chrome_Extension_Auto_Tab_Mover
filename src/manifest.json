@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Dashboard Rotator",
+    "version": "1.0",
+    "permissions": [
+      "tabGroups",
+      "tabs",
+      "storage",
+      "alarms",
+      "notifications"
+    ],
+    "host_permissions": [
+      "https://board.yakjin.com:3000/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
